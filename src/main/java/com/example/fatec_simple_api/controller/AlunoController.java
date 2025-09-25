@@ -11,13 +11,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/alunos")
-@Tag(name = "Alunos", description = "Endpoint para consulta de alunos")
+@Tag(name = "Alunos", description = "Endpoint para consulta de alunos e alunas")
 public class AlunoController {
 
     @GetMapping()
     @Operation(summary = "Lista todos os alunos", description = "Retorna uma lista fixa de nomes de alunos.")
     public List<String> getAlunos() {
         // Retornando um vetor (lista) simples de nomes
-        return Arrays.asList("João da Silva", "Maria Oliveira", "Pedro Martins");
+        return Arrays.asList("João da Silva", "Maria Oliveira", "Pedro Martins", "Ricardo Davis");
     }
 }
