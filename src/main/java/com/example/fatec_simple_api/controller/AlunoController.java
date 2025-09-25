@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/alunos")
-@Tag(name = "Alunos", description = "Endpoint para consulta de alunos")
+@Tag(name = "Alunos", description = "Endpoint para consulta de alunos e alunas")
 public class AlunoController {
 
     @GetMapping()
